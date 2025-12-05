@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaspal Singh - Android Developer</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .skill-bar {
+            height: 6px;
+            border-radius: 3px;
+            animation: fillBar 2s ease-out;
+        }
+        
+        @keyframes fillBar {
+            from { width: 0%; }
+            to { width: var(--width); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .tech-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+            margin: 4rem 0;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="min-h-full bg-white"><!-- Header Section -->
+  <header class="gradient-bg py-20">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center">
+     <div class="w-32 h-32 mx-auto mb-8 bg-white rounded-full shadow-xl border-4 border-white overflow-hidden"><img src="https://media.licdn.com/dms/image/v2/D4D03AQE4NS2nqk-Msg/profile-displayphoto-crop_800_800/B4DZlcoIQHIEAI-/0/1758195648732?e=1763596800&v=beta&t=KiTZCx0wxWKseGF5_Q5jfzw4KZJ021GLXSme1YHQOg4" alt="Jaspal Singh - Android Developer" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="w-full h-full flex items-center justify-center" style="display: none;">
+       <svg class="w-16 h-16 text-slate-600" fill="currentColor" viewbox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1518-.5972.416.416 0 00-.5972.1518l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1333 1.0989L4.8442 5.4467a.4161.4161 0 00-.5972-.1518.416.416 0 00-.1518.5972l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396" />
+       </svg>
+      </div>
+     </div>
+     <h1 id="name" class="text-5xl font-bold mb-4 text-slate-800">Jaspal Singh</h1>
+     <h2 id="title" class="text-2xl font-light mb-6 text-slate-600">Android Developer</h2>
+     <p id="tagline" class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">Building innovative mobile applications with modern Android technologies and clean architecture</p>
+     <div class="mt-8 flex justify-center space-x-4">
+      <div class="tech-badge">
+       Kotlin
+      </div>
+      <div class="tech-badge">
+       Jetpack Compose
+      </div>
+      <div class="tech-badge">
+       MVVM
+      </div>
+     </div>
+    </div>
+   </div>
+  </header><!-- About Section -->
+  <section class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-slate-800 mb-4">About Me</h2>
+     <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+     <div class="fade-in">
+      <p id="about-text" class="text-lg text-slate-600 leading-relaxed mb-8">Android Developer skilled in building mobile applications using Kotlin, Java, XML, and Jetpack Compose. Passionate about developing user-friendly, high-performance Android apps using modern architectures like MVVM and Dagger Hilt. Focused on clean code, scalability, and great user experience. Based in Amritsar, Punjab, India.</p>
+      <div class="mt-8">
+       <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="text-center p-4 bg-slate-50 rounded-xl">
+         <div class="text-3xl font-bold text-blue-600 mb-1">
+          5+
+         </div>
+         <div class="text-slate-600 text-sm">
+          Years Experience
+         </div>
+        </div>
+        <div class="text-center p-4 bg-slate-50 rounded-xl">
+         <div class="text-3xl font-bold text-purple-600 mb-1">
+          15+
+         </div>
+         <div class="text-slate-600 text-sm">
+          Projects Completed
+         </div>
+        </div>
+       </div>
+       <div class="text-center p-6 bg-slate-50 rounded-xl">
+        <div class="text-2xl font-bold text-blue-600 mb-2">
+         🚀
+        </div>
+        <div class="text-slate-600">
+         Ready to Build Amazing Apps
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="space-y-6">
+      <div>
+       <div class="flex justify-between mb-3"><span class="font-semibold text-slate-700">Kotlin</span> <span class="text-slate-500">95%</span>
+       </div>
+       <div class="bg-slate-200 rounded-full h-2">
+        <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-600 rounded-full" style="--width: 95%; width: 95%;"></div>
+       </div>
+      </div>
+      <div>
+       <div class="flex justify-between mb-3"><span class="font-semibold text-slate-700">Java</span> <span class="text-slate-500">95%</span>
+       </div>
+       <div class="bg-slate-200 rounded-full h-2">
+        <div class="skill-bar bg-gradient-to-r from-red-500 to-red-600 rounded-full" style="--width: 95%; width: 95%;"></div>
+       </div>
+      </div>
+      <div>
+       <div class="flex justify-between mb-3"><span class="font-semibold text-slate-700">Jetpack Compose</span> <span class="text-slate-500">90%</span>
+       </div>
+       <div class="bg-slate-200 rounded-full h-2">
+        <div class="skill-bar bg-gradient-to-r from-purple-500 to-purple-600 rounded-full" style="--width: 90%; width: 90%;"></div>
+       </div>
+      </div>
+      <div>
+       <div class="flex justify-between mb-3"><span class="font-semibold text-slate-700">MVVM Architecture</span> <span class="text-slate-500">90%</span>
+       </div>
+       <div class="bg-slate-200 rounded-full h-2">
+        <div class="skill-bar bg-gradient-to-r from-green-500 to-green-600 rounded-full" style="--width: 90%; width: 90%;"></div>
+       </div>
+      </div>
+      <div>
+       <div class="flex justify-between mb-3"><span class="font-semibold text-slate-700">Firebase &amp; APIs</span> <span class="text-slate-500">90%</span>
+       </div>
+       <div class="bg-slate-200 rounded-full h-2">
+        <div class="skill-bar bg-gradient-to-r from-orange-500 to-orange-600 rounded-full" style="--width: 90%; width: 90%;"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Experience Section -->
+  <section class="py-20 bg-slate-50">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-slate-800 mb-4">Experience</h2>
+     <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+     <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+      <div class="flex items-center mb-6">
+       <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+        <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-slate-800">Mobile App Development</h3>
+      </div>
+      <p class="text-slate-600 mb-4">Designed and developed Android applications with strong UI/UX principles using modern development practices.</p>
+      <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UI/UX Design</span> <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Material Design</span>
+      </div>
+     </div>
+     <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+      <div class="flex items-center mb-6">
+       <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+        <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-slate-800">Architecture &amp; Integration</h3>
+      </div>
+      <p class="text-slate-600 mb-4">Implemented Room Database, Retrofit, Firebase, Dagger Hilt, and MVVM architecture for scalable applications.</p>
+      <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">MVVM</span> <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Dagger Hilt</span>
+      </div>
+     </div>
+     <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+      <div class="flex items-center mb-6">
+       <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+        <svg class="w-6 h-6 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-slate-800">SDK Integration</h3>
+      </div>
+      <p class="text-slate-600 mb-4">Integrated third-party SDKs like Agora.io, Jitsi Meet, ZegoCloud, Stripe, Google Fit, and Fitbit.</p>
+      <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Third-party APIs</span> <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Payment Integration</span>
+      </div>
+     </div>
+     <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+      <div class="flex items-center mb-6">
+       <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+        <svg class="w-6 h-6 text-red-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-slate-800">Specialized Apps</h3>
+      </div>
+      <p class="text-slate-600 mb-4">Created mobile apps for Live Streaming, Video Meetings, Health Tracking, Data Storage, and Utility Tools.</p>
+      <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Live Streaming</span> <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Health Apps</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Projects Section -->
+  <section class="py-20 bg-white">
+   <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
+     <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Miicall Meeting App -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100">
+      <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+       <svg class="w-16 h-16 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-3 text-slate-800">Miicall Meeting App</h3>
+       <p class="text-slate-600 mb-4">Video conferencing, chat, and screen sharing using Jitsi Meet &amp; ZegoCloud SDKs.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Jitsi Meet</span> <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">ZegoCloud</span>
+       </div>
+      </div>
+     </div><!-- Biongevity Health App -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100">
+      <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+       <svg class="w-16 h-16 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-3 text-slate-800">Biongevity Health App</h3>
+       <p class="text-slate-600 mb-4">Health tracking with Google Fit, Fitbit, Stripe, and Room Database integration.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Google Fit</span> <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Fitbit</span>
+       </div>
+      </div>
+     </div><!-- Date Flu Live Streaming -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100">
+      <div class="h-48 bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center">
+       <svg class="w-16 h-16 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-3 text-slate-800">Date Flu Live Streaming</h3>
+       <p class="text-slate-600 mb-4">Social live streaming with Firebase, Agora.io, and MVVM architecture.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Agora.io</span> <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Firebase</span>
+       </div>
+      </div>
+     </div><!-- Wow's Live Streaming -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100">
+      <div class="h-48 bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
+       <svg class="w-16 h-16 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-3 text-slate-800">Wow's Live Streaming</h3>
+       <p class="text-slate-600 mb-4">Streaming, reels, coins, payments (Razorpay), and animation features.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Razorpay</span> <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Animations</span>
+       </div>
+      </div>
+     </div><!-- Vautra Data Storage -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100">
+      <div class="h-48 bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+       <svg class="w-16 h-16 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-3 text-slate-800">Vautra Data Storage</h3>
+       <p class="text-slate-600 mb-4">Secure cloud file storage using Dagger Hilt, Retrofit, and Room DB.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Dagger Hilt</span> <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">Room DB</span>
+       </div>
+      </div>
+     </div><!-- Weather App -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100">
+      <div class="h-48 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
+       <svg class="w-16 h-16 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-3 text-slate-800">Weather App</h3>
+       <p class="text-slate-600 mb-4">Built with Jetpack Compose and MVVM for a clean and modern UI.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm">Jetpack Compose</span> <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">MVVM</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Skills Section -->
+  <section class="py-20 bg-slate-50">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-slate-800 mb-4">Technical Skills</h2>
+     <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-white p-6 rounded-2xl shadow-lg text-center card-hover">
+      <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">Languages</h3>
+      <p class="text-slate-600 text-sm">Kotlin, Java, XML</p>
+     </div>
+     <div class="bg-white p-6 rounded-2xl shadow-lg text-center card-hover">
+      <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">Frameworks</h3>
+      <p class="text-slate-600 text-sm">Jetpack Compose, MVVM, Dagger Hilt</p>
+     </div>
+     <div class="bg-white p-6 rounded-2xl shadow-lg text-center card-hover">
+      <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">Database &amp; APIs</h3>
+      <p class="text-slate-600 text-sm">Room Database, Retrofit, Firebase</p>
+     </div>
+     <div class="bg-white p-6 rounded-2xl shadow-lg text-center card-hover">
+      <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">SDKs &amp; Tools</h3>
+      <p class="text-slate-600 text-sm">Agora.io, Jitsi Meet, ZegoCloud, Stripe</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section class="py-20 bg-white">
+   <div class="max-w-4xl mx-auto px-6 text-center">
+    <div class="mb-16">
+     <h2 class="text-4xl font-bold text-slate-800 mb-4">Get In Touch</h2>
+     <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+     <p class="text-xl text-slate-600">Ready to work together? Let's discuss your next Android project!</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+     <div class="p-8 bg-slate-50 rounded-2xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">Email</h3><a href="mailto:jaspalsinghbhakha@gmail.com" id="email" class="text-slate-600 hover:text-blue-600 transition-colors duration-300 text-sm break-all">jaspalsinghbhakha@gmail.com</a>
+     </div>
+     <div class="p-8 bg-slate-50 rounded-2xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">Phone</h3>
+      <p id="phone" class="text-slate-600">+91 7973387401</p>
+     </div>
+     <div class="p-8 bg-slate-50 rounded-2xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">LinkedIn</h3><a href="https://www.linkedin.com/in/jaspal-singh-438768181" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-indigo-600 transition-colors duration-300 text-sm break-all">linkedin.com/in/jaspal-singh-438768181</a>
+     </div>
+     <div class="p-8 bg-slate-50 rounded-2xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+       <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+       </svg>
+      </div>
+      <h3 class="font-bold text-slate-800 mb-2">Location</h3>
+      <p id="location" class="text-slate-600">Amritsar, Punjab, India</p>
+     </div>
+    </div><button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"> Let's Build Something Amazing </button>
+   </div>
+  </section><!-- Footer -->
+  <footer class="bg-slate-800 text-white py-12">
+   <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-slate-300">© 2024 <span id="footer-name">Jaspal Singh</span>. All rights reserved.</p>
+    <p class="text-slate-400 mt-2">Android Developer | Building the future, one app at a time</p>
+   </div>
+  </footer>
+  <script>
+        const defaultConfig = {
+            name: "Jaspal Singh",
+            title: "Android Developer", 
+            tagline: "Building innovative mobile applications with modern Android technologies and clean architecture",
+            about_text: "Android Developer skilled in building mobile applications using Kotlin, Java, XML, and Jetpack Compose. Passionate about developing user-friendly, high-performance Android apps using modern architectures like MVVM and Dagger Hilt. Focused on clean code, scalability, and great user experience. Based in Amritsar, Punjab, India.",
+            email: "jaspalsinghbhakha@gmail.com",
+            phone: "+91 7973387401",
+            location: "Amritsar, Punjab, India",
+            background_color: "#f8fafc",
+            surface_color: "#ffffff",
+            text_color: "#334155",
+            primary_action_color: "#3b82f6",
+            secondary_action_color: "#8b5cf6"
+        };
+
+        async function onConfigChange(config) {
+            // Update text content
+            document.getElementById('name').textContent = config.name || defaultConfig.name;
+            document.getElementById('title').textContent = config.title || defaultConfig.title;
+            document.getElementById('tagline').textContent = config.tagline || defaultConfig.tagline;
+            document.getElementById('about-text').textContent = config.about_text || defaultConfig.about_text;
+            
+            // Update email with clickable link
+            const emailElement = document.getElementById('email');
+            const emailAddress = config.email || defaultConfig.email;
+            emailElement.textContent = emailAddress;
+            emailElement.href = `mailto:${emailAddress}`;
+            
+            document.getElementById('phone').textContent = config.phone || defaultConfig.phone;
+            document.getElementById('location').textContent = config.location || defaultConfig.location;
+            document.getElementById('footer-name').textContent = config.name || defaultConfig.name;
+
+            // Update colors
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+            const surfaceColor = config.surface_color || defaultConfig.surface_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+            const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+            // Apply background color to gradient sections
+            document.querySelector('.gradient-bg').style.background = `linear-gradient(135deg, ${backgroundColor} 0%, #e2e8f0 100%)`;
+            
+            // Apply surface color to cards and sections
+            document.querySelectorAll('.bg-white').forEach(el => {
+                el.style.backgroundColor = surfaceColor;
+            });
+
+            // Apply text color
+            document.querySelectorAll('.text-slate-800, .text-slate-700, .text-slate-600').forEach(el => {
+                el.style.color = textColor;
+            });
+
+            // Apply primary action color to button
+            const button = document.querySelector('button');
+            button.style.background = `linear-gradient(to right, ${primaryActionColor}, ${secondaryActionColor})`;
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.surface_color || defaultConfig.surface_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ surface_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.primary_action_color || defaultConfig.primary_action_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ primary_action_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ secondary_action_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["name", config.name || defaultConfig.name],
+                ["title", config.title || defaultConfig.title],
+                ["tagline", config.tagline || defaultConfig.tagline],
+                ["about_text", config.about_text || defaultConfig.about_text],
+                ["email", config.email || defaultConfig.email],
+                ["phone", config.phone || defaultConfig.phone],
+                ["location", config.location || defaultConfig.location]
+            ]);
+        }
+
+        // Initialize SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+
+        // Add smooth scrolling and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate skill bars on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fillBar 2s ease-out';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+                observer.observe(bar);
+            });
+
+            // Add fade-in animation to sections
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.card-hover').forEach(card => {
+                fadeObserver.observe(card);
+            });
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9982cefba7c0484d',t:'MTc2MjA3Nzg3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
